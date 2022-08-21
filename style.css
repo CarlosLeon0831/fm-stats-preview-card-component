@@ -2,39 +2,57 @@
     border: 1px solid red;
 } */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
 
-html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }
 
 body {
-    background-color: var(--very-dark-blue);
-    color: var(--white);
-    font-size: 15px;
-    font-family: 'Inter', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: var(--very-dark-blue);
+  color: var(--white);
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 footer {
-    display: flex;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 10px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+svg {
     position: absolute;
-    bottom: 0;
-    padding-bottom: 10px;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
 }
 
 .hero__container {
-    background: var(--dark-desaturated-blue);
-    width: 1000px;
-    height: 400px;
-    display: flex;
+  background: var(--dark-desaturated-blue);
+  width: 1000px;
+  height: 400px;
+  display: flex;
+}
+
+.hero__image {
+  display: flex;
+  position: relative;
+}
+
+.hero__image img {
+  display: flex;
+  height: 400px;
+  /* https://justcode.today/filters/ */
+  -webkit-filter: brightness(65%) contrast(70%) hue-rotate(108deg) saturate(170%) sepia(73%) url(#svgTint);
+  filter: brightness(65%) contrast(70%) hue-rotate(108deg) saturate(170%) sepia(73%) url(#svgTint);
 }
 
 .attribution {
@@ -45,17 +63,16 @@ footer {
   color: var(--soft-violet);
 }
 
-@media screen and (max-size: 375px){
-    
+@media screen and (max-size: 375px) {
 }
 
 :root {
-    /* Primary */
-    --very-dark-blue: hsl(233, 47%, 7%);
-    --dark-desaturated-blue: hsl(244, 38%, 16%);
-    --soft-violet: hsl(277, 64%, 61%);
-    /* Neutral */
-    --white: hsl(0, 0%, 100%);
-    --slightly-transp-white-p: hsla(0, 0%, 100%, 0.75);
-    --slightly-transp-white-h: hsla(0, 0%, 100%, 0.6);
+  /* Primary */
+  --very-dark-blue: hsl(233, 47%, 7%);
+  --dark-desaturated-blue: hsl(244, 38%, 16%);
+  --soft-violet: hsl(277, 64%, 61%);
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --slightly-transp-white-p: hsla(0, 0%, 100%, 0.75);
+  --slightly-transp-white-h: hsla(0, 0%, 100%, 0.6);
 }
