@@ -21,6 +21,19 @@ body {
   justify-content: center;
 }
 
+h1 {
+    font-size: 2.2rem;
+}
+
+strong {
+    color: var(--soft-violet);
+}
+
+p {
+    color: var(--slightly-transp-white-p);
+    line-height: 1.5rem;
+}
+
 footer {
   display: flex;
   position: absolute;
@@ -53,6 +66,15 @@ svg {
   /* https://justcode.today/filters/ */
   -webkit-filter: brightness(65%) contrast(70%) hue-rotate(108deg) saturate(170%) sepia(73%) url(#svgTint);
   filter: brightness(65%) contrast(70%) hue-rotate(108deg) saturate(170%) sepia(73%) url(#svgTint);
+}
+
+.text__container {
+    padding: 40px 70px 50px 70px;
+}
+
+.stats__container {
+    display: flex;
+    gap: 65px;
 }
 
 .attribution {
