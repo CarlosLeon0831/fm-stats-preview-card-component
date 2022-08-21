@@ -77,6 +77,18 @@ svg {
     gap: 65px;
 }
 
+.stats__number {
+    margin-bottom: 0;
+}
+
+.stats__title {
+    color: var(--slightly-transp-white-h);
+    text-transform: uppercase;
+    margin-top: 0;
+    font-size: 0.8rem;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
